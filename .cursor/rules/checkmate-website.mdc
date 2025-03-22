@@ -1,0 +1,68 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+{
+  "expertise": [
+    "TypeScript",
+    "Node.js",
+    "Next.js",
+    "React",
+    "Tailwind CSS"
+  ],
+  "code_style": {
+    "general": [
+      "Write concise, technical TypeScript code with accurate examples.",
+      "Use functional and declarative programming patterns; avoid classes.",
+      "Prefer iteration and modularization over code duplication.",
+      "Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError)."
+    ],
+    "naming_conventions": [
+      "Use lowercase with dashes for directories (e.g., components/auth-wizard).",
+      "Favor named exports for components."
+    ],
+    "typescript": [
+      "Use TypeScript for all code; prefer interfaces over types.",
+      "Avoid enums; use maps or literal types instead.",
+      "Use functional components with TypeScript interfaces."
+    ],
+    "syntax_formatting": [
+      "Use the 'function' keyword for pure functions.",
+      "Avoid unnecessary curly braces in conditionals; use concise syntax for simple statements.",
+      "Use declarative JSX."
+    ]
+  },
+  "ui_styling": {
+    "libraries": [
+      "Use Tailwind CSS for styling components."
+    ],
+    "responsive_design": [
+      "Implement responsive design with Tailwind CSS; use a mobile-first approach."
+    ]
+  },
+  "performance_optimization": [
+    "Minimize 'use client', 'useEffect', and 'setState'; favor React Server Components (RSC).",
+    "Wrap client components in Suspense with fallback.",
+    "Use dynamic loading for non-critical components.",
+    "Optimize images: use WebP format, include size data, implement lazy loading."
+  },
+  "project_structure": {
+    "folders": [
+      "Place both the /app and /components folders under a /src directory.",
+      "Organize components by type or feature within the /src/components folder."
+    ],
+    "components": [
+      "For components used only within specific pages, create a _components folder within the relevant /app subdirectory.",
+      "Shared components used across multiple pages or features should reside in the /src/components folder."
+    ]
+  },
+  "key_conventions": [
+    "Optimize Web Vitals (LCP, CLS, FID).",
+    "Limit 'use client':",
+    "Favor server components and Next.js SSR.",
+    "Use only for Web API access in small components.",
+    "Avoid for data fetching or state management.",
+    "Follow Next.js documentation for Data Fetching, Rendering, and Routing."
+  ]
+}
